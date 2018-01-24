@@ -19,5 +19,5 @@
   with_items:
   - "{{files}}"
 - yum:
-  name: git
-  state: latest
+    name: git
+    state: latest

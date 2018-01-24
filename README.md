@@ -1,38 +1,19 @@
-Role Name
-=========
+# Devops Team test
+================
 
-A brief description of the role goes here.
+This is a test to evaluate base knowledge for a new candidate
 
-Requirements
+## TEST 
 ------------
-
-Any pre-requisites that may not be covered by Ansible itself or the role should be mentioned here. For instance, if the role uses the EC2 module, it may be a good idea to mention in this section that the boto package is required.
-
-Role Variables
---------------
-
-A description of the settable variables for this role should go here, including any variables that are in defaults/main.yml, vars/main.yml, and any variables that can/should be set via parameters to the role. Any variables that are read from other roles and/or the global scope (ie. hostvars, group vars, etc.) should be mentioned here as well.
-
-Dependencies
-------------
-
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
-
-Example Playbook
-----------------
-
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
-
-    - hosts: servers
-      roles:
-         - { role: username.rolename, x: 42 }
-
-License
--------
-
-BSD
-
-Author Information
-------------------
-
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+1. File and string manipulation
+   
+   In the folder /data/devops-exam/origin
+   * List all file with a line starting with 3 followed by a digit and
+     containing the word **DEVOPS**
+   * Change all **NOTVALID** by **ANSIBLE** in all file content    
+   * Make a copy of all file '*.txt' in /data/devops-exam/destination after
+     renaming them to <filename>_new.txt
+2. Shell scripting
+3. User creation and permission
+4. Git
+5. Middleware ( Apache/Tomcat )

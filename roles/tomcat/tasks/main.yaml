@@ -4,7 +4,8 @@
 
 - service:
     name: tomcat
-    state: started, enabled
+    state: started
+    enabled: yes
 
 
 #Telecharger lapplication sample Hello word pour le challenge apache/tomcat
