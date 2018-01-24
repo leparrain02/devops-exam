@@ -1,0 +1,21 @@
+---
+- name: Include "{{ansible_os_family}}" GNU Octave tasks
+  include: "{{ansible_os_family}}.yaml"
+
+- service:
+    name: tomcat
+    state: started
+
+
+#Telecharger lapplication sample Hello word pour le challenge apache/tomcat
+#Visiter : http://192.168.50.4:8080/sample/
+- name: Download sample.war
+  get_url:
+    url: https://tomcat.apache.org/tomcat-6.0-doc/appdev/sample/sample.war
+    dest: /var/lib/tomcat/webapps/sample.war
+    mode: 0755
+
+#Restart tomcat service
+- service:
+    name: tomcat
+    state: restarted

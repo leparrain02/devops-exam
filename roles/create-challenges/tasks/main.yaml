@@ -1,0 +1,56 @@
+---
+
+#Ajouter le directory qui contient les fichiers/dossiers pour les challenges
+- name: Create start directory
+  file:
+    path: /tmp/challenges
+    state: directory
+    mode: 0755
+
+#Creer les fichiers pour le challenge de find and replace (la string a trouver se trouve dans fichier16.txt : DEVOPSEXAM )
+- name: Add files
+  file:
+    path: "{{ item }}"
+    state: touch
+  with_items:
+     - /tmp/challenges/fichier1.txt
+     - /tmp/challenges/fichier2.txt
+     - /tmp/challenges/fichier3.txt
+     - /tmp/challenges/fichier4.txt
+     - /tmp/challenges/fichier5.txt
+     - /tmp/challenges/fichier6.txt
+     - /tmp/challenges/fichier7.txt
+     - /tmp/challenges/fichier8.txt
+     - /tmp/challenges/fichier9.txt
+     - /tmp/challenges/fichier10.txt
+     - /tmp/challenges/fichier11.txt
+     - /tmp/challenges/fichier12.txt
+     - /tmp/challenges/fichier13.txt
+     - /tmp/challenges/fichier14.txt
+     - /tmp/challenges/fichier15.txt
+     - /tmp/challenges/fichier16.txt
+
+#Ajouter du le text a remplacer dans le fichier1.txt
+- name: Add text fichier1.txt
+  blockinfile:
+    path: "/tmp/challenges/fichier1.txt"
+    block: |
+      DEVOPSEXAM
+
+#Ajouter du le text a remplacer dans le fichier16.txt
+- name: Add text in fichier16.txt
+  blockinfile:
+    path: "/tmp/challenges/fichier16.txt"
+    block: |
+      DEVOPSEXAM
+  
+#Ajouter le folder cible ou copier les fichiers pour le challenge de bash script
+- name: Create directory
+  file:
+    path: /tmp/challenges/copyinit
+    state: directory
+    mode: 0755
+
+
+
+
