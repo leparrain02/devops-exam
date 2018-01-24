@@ -1,0 +1,33 @@
+---
+files:
+  - fichier1:
+    name: fichier1.txt
+    aword: NOTVALID
+  - fichier2:
+    name: fichier2.txt
+    aword: NOTVALID
+  - fichier3:
+    name: fichier3.txt
+    aword: DEVOPS
+  - fichier4:
+    name: fichier4.txt
+    aword: NOTVALID
+  - fichier5:
+    name: fichier5.txt
+    aword: NOTVALID
+  - fichier6:
+    name: fichier6.txt
+    aword: NOTVALID
+  - fichier7:
+    name: fichier7.txt
+    aword: DEVOPS
+  - fichier8:
+    name: fichier8.txt
+    aword: NOTVALID
+  - fichier9:
+    name: fichier9.txt
+    aword: NOTVALID
+  - fichier10:
+    name: fichier10.txt
+    aword: NOTVALID
+  

@@ -1,0 +1,23 @@
+---
+# tasks file for roles/env-preparation
+- file:
+    path: /data/devops-exam/origin
+    state: directory
+    mode: 0777
+- file:
+    path: /data/devops-exam/destination
+    state: directory
+    mode: 0777
+- file:
+    path: /data/devops-exam/tomcatRepo
+    state: directory
+    mode: 0777
+- template:
+    src: fichier.txt.j2
+    dest: "/data/devops-exam/origin/{{item.name}}"
+    mode: 0666
+  with_items:
+  - "{{files}}"
+- yum:
+  name: git
+  state: latest
