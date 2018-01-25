@@ -2,32 +2,82 @@
 files:
   - fichier1:
     name: fichier1.txt
-    aword: NOTVALID
+    word1: NOTVAL
+    word2: PUPPET
+    word3: DEVOPS
+    word4: NOTVAL
+    word5: JENKINS
+    word6: NOTVAL
   - fichier2:
     name: fichier2.txt
-    aword: NOTVALID
+    word1: DEVOPS
+    word2: NOTVAL
+    word3: JENKINS
+    word4: PUPPET
+    word5: NOTVAL
+    word6: NOTVAL
   - fichier3:
     name: fichier3.txt
-    aword: DEVOPS
+    word1: PUPPET
+    word2: NOTVAL
+    word3: DOCKER
+    word4: DEVOPS
+    word5: DEVOPS
+    word6: JENKINS
   - fichier4:
     name: fichier4.txt
-    aword: NOTVALID
+    word1: DOCKER
+    word2: NOTVAL
+    word3: NOTVAL
+    word4: NOTVAL
+    word5: PUPPET
+    word6: NOTVAL
   - fichier5:
     name: fichier5.txt
-    aword: NOTVALID
+    word1: AZURE
+    word2: DOCKER
+    word3: JENKINS
+    word4: CHEF
+    word5: SALTSTACK
+    word6: KUBE
   - fichier6:
     name: fichier6.txt
-    aword: NOTVALID
+    word1: NOTVAL
+    word2: NOTVAL
+    word3: NOTVAL
+    word4: NOTVAL
+    word5: NOTVAL
+    word6: NOTVAL
   - fichier7:
     name: fichier7.txt
-    aword: DEVOPS
+    word1: DEVOPS
+    word2: DEVOPS
+    word3: DEVOPS
+    word4: DEVOPS
+    word5: DEVOPS
+    word6: DEVOPS
   - fichier8:
     name: fichier8.txt
-    aword: NOTVALID
+    word1: DEVOPS
+    word2: DOCKER
+    word3: DEVOPS
+    word4: DOCKER
+    word5: DEVOPS
+    word6: DOCKER
   - fichier9:
     name: fichier9.txt
-    aword: NOTVALID
+    word1: DOCKER
+    word2: NOTVAL
+    word3: DEVOPS
+    word4: DEVOPS
+    word5: NOTVAL
+    word6: DOCKER
   - fichier10:
     name: fichier10.txt
-    aword: NOTVALID
+    word1: DOCKER
+    word2: DOCKER
+    word3: DOCKER
+    word4: DOCKER
+    word5: DOCKER
+    word6: DOCKER
   

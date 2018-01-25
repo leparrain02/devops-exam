@@ -12,12 +12,20 @@
     path: /data/devops-exam/tomcatRepo
     state: directory
     mode: 0777
+- file:
+    path: /data/devops-exam/lib
+    state: directory
+    mode: 0755
 - template:
     src: fichier.txt.j2
     dest: "/data/devops-exam/origin/{{item.name}}"
     mode: 0666
   with_items:
   - "{{files}}"
+- template:
+    src: testfunc.sh.j2
+    dest: /data/devops-exam/lib/testfunc.sh
+    mode: 0644
 - yum:
     name: git
     state: latest
