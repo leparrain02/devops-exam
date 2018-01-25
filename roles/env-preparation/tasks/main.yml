@@ -9,7 +9,7 @@
     state: directory
     mode: 0777
 - file:
-    path: /data/devops-exam/tomcatRepo
+    path: /data/devops-exam/TomcatRepo
     state: directory
     mode: 0777
 - file:
@@ -28,4 +28,7 @@
     mode: 0644
 - yum:
     name: git
+    state: latest
+- yum:
+    name: man-pages
     state: latest

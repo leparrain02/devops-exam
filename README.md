@@ -18,11 +18,11 @@ This is a test to evaluate base knowledge for a new candidate
 2. Shell scripting
    * Writing a new script mytestdevops.sh
    * The script should be executable
-   * It should receive 2 parameters: sourcefolder and destfolder.  If the number of parameter
-     is invalid it should print the usager and exit
-   * If the source folder doesn't exist, it should print and error and exit.
+   * It should receive 2 parameters: sourcefolder and destfolder.  If the number of parameters
+     is invalid it should print the usage and exit
+   * If the source folder doesn't exist, it should print an error and exit.
    * If the dest folder doesn't exist, it should create it.
-   * It should include the lib /data/devops-exam/lib/testfunc.sh
+   * It should source the lib /data/devops-exam/lib/testfunc.sh.  This file contains the function devops_exam needed for our script
    * For each file '*.txt' in the source folder, it should call the function 'devops_exam'.  The function needs 2 parameters: the file and the dest folder.
 3. User creation and permission
    * Create a new user **devops**
@@ -32,11 +32,11 @@ This is a test to evaluate base knowledge for a new candidate
    In the folder /data/devops-exam/TomcatRepo
    * Clone the repo [GitHub Testnouveau](https://github.com/leparrain02/testnouveau.git)
    * Create a new branch devel and make this branch active
-   * Create a new file 'test.txt' containing 'THIS IS A TEST' and add it to git
+   * Create a new file 'test.txt' containing 'THIS IS A TEST' and commit the change into git.
    * Merge the branch devel to the master
 5. Middleware ( Apache/Tomcat )
    Tomcat7 is already install on the server. You need to:
-   * Copy /data/devops-exam/TomcatRepo/ROOT.war in the webapps folder of Tomcat
+   * Copy /data/devops-exam/TomcatRepo/testnouveau/ROOT.war in the Tomcat's webapps folder
    * Install Apache
    * Make sure Apache will restart automatically after a reboot
    * Connect the path /devops-exam/ to the root folder of Tomcat with the protocol AJP.
